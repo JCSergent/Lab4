@@ -1,9 +1,10 @@
 package pkgCore;
+import pkgEnum.eGameType;
 
 public class GamePlayBlackJack extends GamePlay {
 
-	public GamePlayBlackJack(pkgEnum.eGameType eGameType) {
-		super(eGameType);
+	public GamePlayBlackJack() {
+		super(eGameType.BLACKJACK);
 	}
 
 }

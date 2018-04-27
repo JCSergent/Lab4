@@ -139,6 +139,13 @@ public class Flamingo extends Application {
 		}
 	}
 	
+	public Player getAppPlayer() {
+		return appPlayer;
+	}
+	public void SendMessageToClient(Object Message) {
+		gClient.messageSend(Message);
+	}
+	
 	private class GameClient extends Client {
 
 		public GameClient(String hubHostName, int hubPort) throws IOException {
